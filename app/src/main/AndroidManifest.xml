@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.movieconsumer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:name=".presentation.App"
+        android:allowBackup="true"
+        android:icon="@drawable/movielogo"
+        android:label="MovieBuzz"
+        android:roundIcon="@drawable/movielogo"
+        android:supportsRtl="true"
+        android:theme="@style/MovieConsumerTheme">
+        <activity android:name=".presentation.movies.MoviesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.detail.DetailActivity"/>
+    </application>
+
+</manifest>
